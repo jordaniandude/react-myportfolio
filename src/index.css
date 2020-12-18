@@ -1,0 +1,89 @@
+* {
+  list-style: none;
+}
+
+body {
+  text-align: center;
+  font-size: 20px;
+  padding: 2.5%;
+  font-family: "Harmattan", sans-serif;
+}
+
+.profile {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+}
+
+.btn {
+  background-color: teal;
+  border: none;
+  color: white;
+  padding: 13px 30px;
+  text-align: center;
+  font-size: 18px;
+  margin: 4px 2px;
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  opacity: 0.6;
+}
+
+.title-fade-out {
+  opacity: 0;
+  animation-name: fade-out;
+  animation-duration: 2s;
+}
+
+.title-fade-in {
+  opacity: 100;
+  animation-name: fade-in;
+  animation-duration: 2s;
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 100;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100;
+  }
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.gallery {
+  display: inline-block;
+  margin: 15px;
+  width: 300px;
+}
+
+.gallery img:hover {
+  filter: brightness(50%);
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+}
